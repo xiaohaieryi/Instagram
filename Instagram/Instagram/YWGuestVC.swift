@@ -72,7 +72,7 @@ class YWGuestVC: UICollectionViewController {
   //载入发访客发布的帖子
     func loadPost()  {
         let query = AVQuery.init(className:"Posts")
-        query.whereKey("username", equalTo: guestArray.last?.username)
+        query.whereKey("username", equalTo: guestArray.last?.username ?? "")
         query.limit = page
         query.findObjectsInBackground { (objects:[Any]?, error:Error?) in
             //查询成功
@@ -91,7 +91,7 @@ class YWGuestVC: UICollectionViewController {
                 self.collectionView?.reloadData()
             }else {
                 
-                print(error?.localizedDescription)
+                print(error?.localizedDescription ?? "")
             }
             
         }
@@ -114,7 +114,7 @@ class YWGuestVC: UICollectionViewController {
     let header =  self.collectionView?.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "Header", for: indexPath) as! YWHeaderView
     //载入访客的基本数据信息
     let infoQuery =  AVQuery.init(className: "_User")
-    infoQuery.whereKey("username", equalTo: guestArray.last?.username)
+    infoQuery.whereKey("username", equalTo: guestArray.last?.username ?? "")
     infoQuery.findObjectsInBackground ({ (objects:[Any]?, error: Error?) in
         if error == nil {
             //判断是否有用户数据
@@ -139,10 +139,54 @@ class YWGuestVC: UICollectionViewController {
             }
             
         }else {
-            print(error?.localizedDescription)
+            print(error?.localizedDescription ?? "")
         }
     })
+             //设置当前用户和访客之间的关系状态
+    let followeeQuery = AVUser.current()?.followeeQuery()
+    followeeQuery?.whereKey("user", equalTo: AVUser.current() ?? "")
+    followeeQuery?.whereKey("followee", equalTo: guestArray.last ?? "")
+    followeeQuery?.countObjectsInBackground({ (count:Int, error:Error?) in
+    guard error == nil else {print(error?.localizedDescription ?? ""); return}
+        
+        if count == 0 {
+          header.editBtn.setTitle("关 注", for: .normal)
+          header.editBtn.backgroundColor = UIColor.lightGray
+        }else {
+            header.editBtn.setTitle("✅已关注", for: .normal)
+            header.editBtn.backgroundColor = UIColor.green
+        }
+    })
+      //计算统计数据
+    //访客帖子数
+    let posts = AVQuery.init(className: "Posts")
+    posts.whereKey("username", equalTo: guestArray.last?.username ?? "")
+    posts.countObjectsInBackground { (count: Int, error:Error?) in
+        if error == nil {
+            header.posts.text = "\(count)"
+        }else{
+            print(error?.localizedDescription ?? 0)
+        }
+    }
     
+    //访客的关注者数
+    let followers = AVUser.followerQuery((guestArray.last?.objectId)!)
+    followers.countObjectsInBackground { (count: Int, error:Error?) in
+        if error == nil {
+            header.followers.text = "\(count)"
+        }else{
+            print(error?.localizedDescription ?? 0)
+        }
+    }
+    //访客的关注数
+    let followings = AVUser.followeeQuery((guestArray.last?.objectId)!)
+    followings.countObjectsInBackground { (count: Int, error:Error?) in
+        if error == nil {
+            header.followings.text = "\(count)"
+        }else{
+            print(error?.localizedDescription ?? 0)
+        }
+    }
     return header
 }
   //配置Cell
@@ -154,7 +198,7 @@ class YWGuestVC: UICollectionViewController {
             if error == nil {
              cell.picImg.image = UIImage.init(data: data!)
             }else {
-             print(error?.localizedDescription)
+                print(error?.localizedDescription ?? "")
             }
        }
         return cell

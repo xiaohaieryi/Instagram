@@ -495,10 +495,10 @@
             </objects>
             <point key="canvasLocation" x="-4577" y="513"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--GuestVC-->
         <scene sceneID="VeJ-p4-ams">
             <objects>
-                <collectionViewController id="66H-SW-eqg" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="GuestVC" id="66H-SW-eqg" customClass="YWGuestVC" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gSg-sB-ehk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -539,7 +539,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSb-pA-2Kp">
                                     <rect key="frame" x="20" y="114" width="224" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
