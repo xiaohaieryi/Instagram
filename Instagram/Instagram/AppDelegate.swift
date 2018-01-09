@@ -12,10 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+  
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        AVOSCloud.setApplicationId("XE5Vk4nU7W4i034brWAPcNBF-gzGzoHsz", clientKey: "2PnHPN7zEDIzmdGr25j7xMkx")
+        //跟踪统计应用打开情况
+        AVAnalytics.trackAppOpened(launchOptions: launchOptions)
+        
+        login()
+        
+        
         return true
     }
 
@@ -41,6 +48,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func login()  {
+        //获取储存在本地的用户名
+        let username: String? = UserDefaults.standard.string(forKey: "username")
+        //如果之前成功登陆过
+        if username != nil {
+           
+let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+let myTabBar = storyboard.instantiateViewController(withIdentifier:"TabBar") as! UITabBarController
+ window?.rootViewController = myTabBar
+            //互相关注代码
+//    AVUser.current()?.follow("5a4dca1fd50eee00718ef2dc", andCallback: { (success:Bool?, error:Error?) in
+//
+//                if success! {
+//
+//                    print("关注成功")
+//                }else {
+//                    print("关注失败")
+//
+//                }
+//            })
+            
+        }
+    }
 }
 

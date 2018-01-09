@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		C80E85101FECF252007E6089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80E850F1FECF252007E6089 /* AppDelegate.swift */; };
-		C80E85121FECF252007E6089 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80E85111FECF252007E6089 /* ViewController.swift */; };
 		C80E85151FECF252007E6089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80E85131FECF252007E6089 /* Main.storyboard */; };
 		C80E85171FECF252007E6089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C80E85161FECF252007E6089 /* Assets.xcassets */; };
 		C80E851A1FECF252007E6089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80E85181FECF252007E6089 /* LaunchScreen.storyboard */; };
 		C80E85251FECF252007E6089 /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80E85241FECF252007E6089 /* InstagramTests.swift */; };
 		C80E85301FECF252007E6089 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80E852F1FECF252007E6089 /* InstagramUITests.swift */; };
+		C815D5A52001D29C003B8DF0 /* YWGuestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C815D5A42001D29C003B8DF0 /* YWGuestVC.swift */; };
+		C84F57BA1FFCC1D5006A4C38 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84F57B91FFCC1D5006A4C38 /* Pacifico.ttf */; };
+		C84F57BC1FFCC2E0006A4C38 /* backImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C84F57BB1FFCC2E0006A4C38 /* backImage.jpg */; };
+		C84F57BE1FFDB7B2006A4C38 /* YWHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F57BD1FFDB7B2006A4C38 /* YWHomeVC.swift */; };
+		C84F57C01FFDB7DD006A4C38 /* YWHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F57BF1FFDB7DD006A4C38 /* YWHeaderView.swift */; };
+		C84F57C21FFDBC33006A4C38 /* YWPictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F57C11FFDBC33006A4C38 /* YWPictureCell.swift */; };
+		C86624EA1FFF0ABC0091BBF8 /* YWFllowersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86624E91FFF0ABC0091BBF8 /* YWFllowersVC.swift */; };
+		C86624EC1FFF0AE40091BBF8 /* YWFollowersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86624EB1FFF0AE40091BBF8 /* YWFollowersCell.swift */; };
+		C8A803FF1FEE002C00303FDB /* YWSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A803FE1FEE002C00303FDB /* YWSignUpVC.swift */; };
+		C8A804011FEE005C00303FDB /* YWResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A804001FEE005C00303FDB /* YWResetPasswordVC.swift */; };
+		C8A804031FEE00A600303FDB /* YWSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A804021FEE00A600303FDB /* YWSignInVC.swift */; };
+		C8A804051FEE1E1200303FDB /* user_Image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A804041FEE1E1100303FDB /* user_Image.jpg */; };
 		E31FE7813D0C26EA43A81FE4 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E39E6E9F904ABA46FF3A8B2 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +51,6 @@
 		A0DC2F805C5A80D0DE173D8A /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		C80E850C1FECF252007E6089 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C80E850F1FECF252007E6089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C80E85111FECF252007E6089 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C80E85141FECF252007E6089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C80E85161FECF252007E6089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C80E85191FECF252007E6089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +61,19 @@
 		C80E852B1FECF252007E6089 /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C80E852F1FECF252007E6089 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		C80E85311FECF252007E6089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C815D5A42001D29C003B8DF0 /* YWGuestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWGuestVC.swift; sourceTree = "<group>"; };
+		C84F57B91FFCC1D5006A4C38 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
+		C84F57BB1FFCC2E0006A4C38 /* backImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backImage.jpg; sourceTree = "<group>"; };
+		C84F57BD1FFDB7B2006A4C38 /* YWHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWHomeVC.swift; sourceTree = "<group>"; };
+		C84F57BF1FFDB7DD006A4C38 /* YWHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWHeaderView.swift; sourceTree = "<group>"; };
+		C84F57C11FFDBC33006A4C38 /* YWPictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWPictureCell.swift; sourceTree = "<group>"; };
+		C86624E91FFF0ABC0091BBF8 /* YWFllowersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWFllowersVC.swift; sourceTree = "<group>"; };
+		C86624EB1FFF0AE40091BBF8 /* YWFollowersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWFollowersCell.swift; sourceTree = "<group>"; };
+		C8A803FD1FEDF3F900303FDB /* Instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instagram-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8A803FE1FEE002C00303FDB /* YWSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWSignUpVC.swift; sourceTree = "<group>"; };
+		C8A804001FEE005C00303FDB /* YWResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWResetPasswordVC.swift; sourceTree = "<group>"; };
+		C8A804021FEE00A600303FDB /* YWSignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YWSignInVC.swift; sourceTree = "<group>"; };
+		C8A804041FEE1E1100303FDB /* user_Image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = user_Image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +137,23 @@
 			isa = PBXGroup;
 			children = (
 				C80E850F1FECF252007E6089 /* AppDelegate.swift */,
-				C80E85111FECF252007E6089 /* ViewController.swift */,
+				C8A804021FEE00A600303FDB /* YWSignInVC.swift */,
+				C8A803FE1FEE002C00303FDB /* YWSignUpVC.swift */,
+				C8A804001FEE005C00303FDB /* YWResetPasswordVC.swift */,
+				C84F57BD1FFDB7B2006A4C38 /* YWHomeVC.swift */,
+				C86624E91FFF0ABC0091BBF8 /* YWFllowersVC.swift */,
+				C86624EB1FFF0AE40091BBF8 /* YWFollowersCell.swift */,
+				C84F57BF1FFDB7DD006A4C38 /* YWHeaderView.swift */,
+				C84F57C11FFDBC33006A4C38 /* YWPictureCell.swift */,
+				C815D5A42001D29C003B8DF0 /* YWGuestVC.swift */,
 				C80E85131FECF252007E6089 /* Main.storyboard */,
 				C80E85161FECF252007E6089 /* Assets.xcassets */,
+				C84F57BB1FFCC2E0006A4C38 /* backImage.jpg */,
+				C8A804041FEE1E1100303FDB /* user_Image.jpg */,
 				C80E85181FECF252007E6089 /* LaunchScreen.storyboard */,
+				C8A803FD1FEDF3F900303FDB /* Instagram-Bridging-Header.h */,
 				C80E851B1FECF252007E6089 /* Info.plist */,
+				C84F57B91FFCC1D5006A4C38 /* Pacifico.ttf */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -220,6 +255,7 @@
 				TargetAttributes = {
 					C80E850B1FECF252007E6089 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					C80E851F1FECF252007E6089 = {
@@ -259,6 +295,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C84F57BC1FFCC2E0006A4C38 /* backImage.jpg in Resources */,
+				C8A804051FEE1E1200303FDB /* user_Image.jpg in Resources */,
+				C84F57BA1FFCC1D5006A4C38 /* Pacifico.ttf in Resources */,
 				C80E851A1FECF252007E6089 /* LaunchScreen.storyboard in Resources */,
 				C80E85171FECF252007E6089 /* Assets.xcassets in Resources */,
 				C80E85151FECF252007E6089 /* Main.storyboard in Resources */,
@@ -344,8 +383,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C80E85121FECF252007E6089 /* ViewController.swift in Sources */,
+				C86624EC1FFF0AE40091BBF8 /* YWFollowersCell.swift in Sources */,
+				C8A804031FEE00A600303FDB /* YWSignInVC.swift in Sources */,
+				C84F57BE1FFDB7B2006A4C38 /* YWHomeVC.swift in Sources */,
+				C8A803FF1FEE002C00303FDB /* YWSignUpVC.swift in Sources */,
+				C8A804011FEE005C00303FDB /* YWResetPasswordVC.swift in Sources */,
+				C86624EA1FFF0ABC0091BBF8 /* YWFllowersVC.swift in Sources */,
 				C80E85101FECF252007E6089 /* AppDelegate.swift in Sources */,
+				C84F57C01FFDB7DD006A4C38 /* YWHeaderView.swift in Sources */,
+				C84F57C21FFDBC33006A4C38 /* YWPictureCell.swift in Sources */,
+				C815D5A52001D29C003B8DF0 /* YWGuestVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +498,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -501,6 +549,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -512,14 +561,18 @@
 			baseConfigurationReference = 688C73284BE6B292BA4F96FB /* Pods-Instagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89DVU45KZ3;
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuwu.CoreText.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Instagram/Instagram-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -528,14 +581,17 @@
 			baseConfigurationReference = A0DC2F805C5A80D0DE173D8A /* Pods-Instagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89DVU45KZ3;
 				INFOPLIST_FILE = Instagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuwu.CoreText.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Instagram/Instagram-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
